@@ -1,8 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {configNotification} from './services/configNotification'
 
 function App() {
+
+  configNotification()
+
   return (
     <div className="App">
     <h1> Hello World </h1>
