@@ -84,7 +84,7 @@ function App() {
 
       <Wrapper>
 
-        <h1> Quizeee - PWA </h1>
+        <h1> Quizeee </h1>
 
         {
           gameOver || userAnswers.length === totalQuestions ?

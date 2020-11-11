@@ -1,6 +1,13 @@
-var CACHE_NAME = 'appV1';
-
 var urlsToCache = [
+  '/static/js/bundle.js',
+  '/static/js/0.chunk.js',
+  '/static/js/main.chunk.js',
+  '/',
+  '/index.html',
+  '/bg.jpg',
+  '/manifest.json',
+  '/logo192.png',
+  '/favicon.ico',
 
 ];
 
@@ -11,7 +18,7 @@ self.addEventListener("activate", function(e){
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
-    caches.open(CACHE_NAME)
+    caches.open("QuizAppV1")
       .then(function(cache) {
         cache.addAll(urlsToCache);
       })
